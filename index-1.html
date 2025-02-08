@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title class = "titel">Ballenwerper Project</title>
+    </head>
+    <body>
+        <script scr="script.js"></script>
+        <div class = "inleiding">
+            <h2>Groep 2</h2> 
+            <br>
+            <p>In deze website kun je de ballenwerper op afstand besturen.</p>
+            <br>
+
+        </div>
+
+        <div class = "Lars">
+            <h4> Instellingshoek van 0° tot 180°</h4>
+            <input type = "number" id = "inputField1" placeholder = "Instellingshoek">
+            <button onclick = "goToLink1()">Test hoek</button>
+            <script>
+                function goToLink1(){
+                    var inputValue1 = document.getElementById('inputField1').value;
+                    if (inputValue1 >= 0 && inputValue1 <= 180) {
+                        var url1 = 'https://IPSCHOOL.com/i' + inputValue1;
+                        window.location.href = url1;                    
+                    } else {
+                        alert('typ een nummer tussen 0 en 180');
+                    }
+                }
+                
+            </script>
+
+            <h4>Snelheid DC motors van 0 tot 255</h4>
+            <input type="number" id="inputField2" placeholder="Snelheid">
+            <button onclick="goToLink2()">Go 2</button>
+            <script>
+                function goToLink2(){
+                    var inputValue2 = document.getElementById('inputField2').value;
+                    if (inputValue2 >= 0 && inputValue2 <= 255) {
+                        var url2 = 'https://IPSCHOOL.com/m' + inputValue2;
+                        window.location.href = url2;                    
+                    } else {
+                        alert('typ een nummer tussen 0 en 255');
+                    }
+                }
+            </script>
+            <h4> Servo balletje klaarzetten</h4>
+            <button onclick="window.open('https://IPSCHOOL.com/SON','_blank');">SERVO ON</button>
+            <h4>Servo balletje laten vuren</h4>
+            <button onclick="window.open('https://IPSCHOOL.com/SOFF','_blank');">SERVO OFF</button>
+            
+
+        </div>
+    </body>
+</html>

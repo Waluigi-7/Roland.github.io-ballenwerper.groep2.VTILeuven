@@ -1,0 +1,34 @@
+.titel {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    text-align: center;
+    margin-top: 10px;
+    
+
+}
+.inleiding {
+    display: flex;
+    border: radius 10px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    background-color: black;
+    
+
+}
+.Lars {
+    margin: 10px;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    
+}
+body {
+    background-color: cyan;
+}
+head {
+    background-color: cadetblue;
+}
