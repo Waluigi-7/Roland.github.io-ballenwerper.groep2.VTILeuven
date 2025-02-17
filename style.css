@@ -14,6 +14,13 @@
     color: white;
     font-style: italic;
     background-color: black;
+    color: white;
+    
+
+.beschrijving {
+    margin-left: 50px;
+    margin-right: 100px;
+    color: black;
     
 
 }
@@ -24,11 +31,12 @@
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1 1 auto;
+    width: 300px;
     
 }
 body {
-    background-color: cyan;
+    background-color: white;
 }
 head {
-    background-color: cadetblue;
+    background-color: black;
 }
