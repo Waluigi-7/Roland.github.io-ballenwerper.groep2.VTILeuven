@@ -1,4 +1,5 @@
 .titel {
+    color: white;
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
@@ -33,6 +34,7 @@
     flex-wrap: wrap;
     flex: 1 1 auto;
     width: 300px;
+    
     
 }
 body {
