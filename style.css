@@ -39,6 +39,7 @@
 .afbeeldingen {
     position: absolute;
     right: 10px;
+    text-align: right;
     
 }
 body {
